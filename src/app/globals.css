@@ -2,26 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.chip-alive {
+    background-color: rgb(85, 204, 68); /* Color para tipo Normal */
+    color: #fff; /* Color de texto blanco */
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  
+  .chip-dead {
+    background-color: #b11515; /* Color para tipo Fuego */
+    color: #fff; /* Color de texto blanco */
+  }
+  
+  .chip-unknown {
+    background-color: #c3cfd1; /* Color para tipo Agua */
+    color: #fff; /* Color de texto blanco */
+  }
